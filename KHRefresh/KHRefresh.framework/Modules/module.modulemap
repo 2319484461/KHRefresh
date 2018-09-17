@@ -1,0 +1,6 @@
+framework module KHRefresh {
+  umbrella header "KHRefresh.h"
+
+  export *
+  module * { export * }
+}
