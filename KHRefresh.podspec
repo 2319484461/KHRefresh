@@ -8,14 +8,16 @@
 
 Pod::Spec.new do |s|
   s.name         = "KHRefresh"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.license      = { :type => "MIT" }
   s.homepage     = "https://github.com/2319484461/KHRefresh"
   s.authors      = { "2319484461@qq.com" => "2319484461@qq.com" }
   s.summary      = "KHRefresh for pull-up refresh and pull-down refresh"
-  s.source       = { :git => 'https://github.com/2319484461/KHRefresh.git', :tag =>'1.0.2'  }
+  s.source       = { :git => 'https://github.com/2319484461/KHRefresh.git', :tag =>s.version  }
   s.platform     = :ios, '8.0'
   s.vendored_frameworks = 'KHRefresh/KHRefresh.framework'
   s.frameworks   = 'UIKit','Foundation'
+  s.resources    = 'KHRefresh/KHRefresh.bundle'
+  s.requires_arc = true
 
 end
